@@ -121,6 +121,10 @@ SAP Learning Hub에서 학습한 ABAP 코드 모음입니다.
 - 이름 기반 필드 매핑
 - alias 지정으로 필드 매핑 최적화
 
+---
+
+### 2026년 3월 9일
+
 #### ZCL_20260310_ITAB (Exercise 15)
 - Internal Table (내부 테이블) 사용
 - Table Type 정의 (STANDARD TABLE)
