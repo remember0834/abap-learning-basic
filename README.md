@@ -148,6 +148,17 @@ SAP Learning Hub에서 학습한 ABAP 코드 모음입니다.
 - Draft 지원 기능
 - RAP (RESTful ABAP Programming) 개념
 
+### 2026년 3월 17일
+
+#### ZCL_20260317_EML (Exercise 17)
+- EML (Entity Manipulation Language) 사용
+- Business Object를 통한 데이터 수정
+- TABLE FOR UPDATE 타입 선언
+- MODIFY ENTITIES 구문
+- UPDATE FIELDS로 특정 필드만 수정
+- COMMIT ENTITIES로 변경사항 확정
+- Business Object의 Validation/Authorization 자동 실행
+- 전통적 SQL 대비 안전한 데이터 조작
 
 
 ---
@@ -172,8 +183,8 @@ Phase 5: 고급 데이터 처리 (2026.03.09)
 Phase 6: 내부 테이블 (2026.03.10)
   └─ Internal Table, Table Expression, 정적속성  
 
-Phase 7: Business Object (2026.03.13)
-  └─ RAP, Behavior Definition, Validation, Authorization
+Phase 7: Business Object (2026.03.13-17)
+  └─ RAP, Behavior Definition, Validation, Authorization, EML
 
 ```
 
@@ -196,12 +207,13 @@ Phase 7: Business Object (2026.03.13)
 - ✅ 메모리 기반 데이터 관리
 
 
-### Unit 7: Business Object
+### Unit 7: Business Object & EML
 - ✅ Business Object 계층 구조 이해
 - ✅ Behavior Definition 분석
 - ✅ Validation과 Authorization 메커니즘
 - ✅ RAP 프레임워크 개념
-
+- ✅ EML을 통한 안전한 데이터 조작
+- ✅ COMMIT ENTITIES를 통한 트랜잭션 관리
 
 ## 📅 학습 기간
 2025.11.05 ~ 진행중
@@ -259,3 +271,11 @@ Phase 7: Business Object (2026.03.13)
 - Authorization (global, instance)
 - Behavior Pool 구조
 - Draft 기능
+
+### EML (Entity Manipulation Language)
+- TABLE FOR UPDATE/CREATE/DELETE
+- MODIFY ENTITIES 구문
+- UPDATE FIELDS로 선택적 필드 수정
+- COMMIT ENTITIES (트랜잭션 확정)
+- Business Object를 통한 안전한 데이터 조작
+- Validation/Authorization 자동 실행
