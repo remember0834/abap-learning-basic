@@ -1,0 +1,105 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'CarrierID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'CarrierID'
+annotate view ZC_20260319FLIGHT with
+{
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  CarrierID;
+  
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  ConnectionID;
+  
+  @UI.identification: [ {
+    position: 30 ,
+    label: 'Flight Date'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 ,
+    label: 'Flight Date'
+  } ]
+  FlightDate;
+  
+  @UI.identification: [ {
+    position: 40 ,
+    label: 'Flight Price'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 ,
+    label: 'Flight Price'
+  } ]
+  Price;
+  
+   @UI.identification: [ {
+    position: 50 ,
+    label: 'Currency Code'
+  } ]
+   @UI.lineItem: [ {
+    position: 50 ,
+    label: 'Currency Code'
+  } ]
+  CurrencyCode;
+  
+  @UI.identification: [ {
+    position: 35 ,
+    label: 'Plane Type'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 ,
+    label: 'Plane Type'
+  } ]
+  PlaneTypeID;
+  
+  @UI.hidden: true
+  LocalCreatedBy;
+  
+  @UI.hidden: true
+  LocalCreatedAt;
+  
+  @UI.hidden: true
+  LocalLastChangedBy;
+  
+  @UI.hidden: true
+  LocalLastChangedAt;
+  
+  @UI.hidden: true
+  LastChangedAt;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 110 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  _BaseEntity;
+}
