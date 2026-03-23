@@ -213,7 +213,22 @@ SAP Learning Hub에서 학습한 ABAP 코드 모음입니다.
 - I_Currency CDS View로 통화 코드 유효성 검증
 - Breakpoint 설정 및 디버깅
 - 비즈니스 로직 검증 구현 (저장 시 실행)
+
+### 2026년 3월 23일
+
+#### ZC_20260319FLIGHT - UI Customization (Exercise 21)
+- Behavior Projection 수정 (Create/Delete 버튼 비활성화)
+- PlaneTypeID 읽기 전용 설정 (field (readonly))
+- Metadata Extension으로 UI 조정
+- 관리 필드 5개 숨김 (@UI.hidden: true)
+- 검색 필드를 CarrierID, ConnectionID만 유지
+- Object Page 필드 순서 변경 (PlaneTypeID를 position 35로)
+- Value Help 확인 (I_CurrencyStdVH, 163개 통화 코드)
+- Fiori 앱에서 UI 변경사항 테스트 및 검증
+
 ---
+
+
 
 ## 📈 학습 진행 경로
 ```
@@ -238,8 +253,8 @@ Phase 6: 내부 테이블 (2026.03.10)
 Phase 7: Business Object (2026.03.13-17)
   └─ RAP, Behavior Definition, Validation, Authorization, EML
 
-Phase 8: OData UI Service 준비 (2026.03.19-20)
-  └─ 서브패키지, Database Table 복사, 샘플 데이터 생성, RAP Generator, Fiori 앱, Validation
+Phase 8: OData UI Service 준비 (2026.03.19-23)
+  └─ 서브패키지, Database Table 복사, 샘플 데이터 생성, RAP Generator, Fiori 앱, Validation, UI Customization
 
 ```
 
@@ -280,10 +295,13 @@ Phase 8: OData UI Service 준비 (2026.03.19-20)
 - ✅ SAP Fiori Elements 앱 실행
 - ✅ 기술적 검증 (데이터 타입, 길이, 참조 무결성)
 - ✅ 비즈니스 로직 검증 구현 (Validation)
+- ✅ UI Customization (Behavior Projection, Metadata Extension)
+- ✅ 필드 읽기 전용 설정 및 UI 요소 제어
+- ✅ Value Help 구현 (드롭다운 선택)
 - ✅ Eclipse ADT 트러블슈팅
 
 ## 📅 학습 기간
-2025.11.05 ~ 진행중
+2025.11.05 ~ 2026.03.23
 
 ## 🛠️ 개발 환경
 - SAP Learning Hub
@@ -354,6 +372,17 @@ Phase 8: OData UI Service 준비 (2026.03.19-20)
 - OData V4 UI Service
 - SAP Fiori Elements 앱
 - CRUD 기능 자동 구현
+
+### UI Customization
+- Behavior Projection에서 표준 작업 비활성화
+- 필드 읽기 전용 설정 (field (readonly))
+- Metadata Extension (@UI annotations)
+- @UI.hidden으로 필드 숨김
+- @UI.selectionField로 검색 필드 제어
+- @UI.identification으로 Object Page 순서 제어
+- @UI.lineItem으로 List Page 컬럼 제어
+- @Consumption.valueHelpDefinition으로 Value Help 추가
+- Fiori Elements 앱 UI 조정
 
 ### Validation 구현
 - Behavior Definition에 Validation 정의
